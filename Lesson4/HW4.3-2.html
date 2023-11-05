@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 45px;
+    }
+    header{
+        width: 100vw;
+        height: 22vh;
+        background: #8D8484;
+    }
+    main{
+        width: 100vw;
+        height: 56vh;
+    }
+    .content{
+        width: 73vw;
+        height: 56vh;
+        flex-direction: column;
+        color: #FFF;
+    }
+    .content1{
+        width: 73vw;
+        height: 19vh;
+        background: #776969;
+    }
+    .content2{
+        width: 73vw;
+        height: 20vh;
+        background: #643030;
+    }
+    .content3{
+        width: 73vw;
+        height: 18vh;
+        background: #441818;
+    }
+    .spam{
+        width: 27vw;
+        height: 56vh;
+        flex-direction: column;
+        color: #FFF;
+    }
+    .spam1{
+        width: 27vw;
+        height: 27vh;
+        background: #937575;
+    }
+    .spam2{
+        width: 27vw;
+        height: 29vh;
+        background: #644C4C;
+    }
+    footer{
+        width: 100vw;
+        height: 22vh;
+        background: #BDBDBD;
+    }
+
+
+</style>
+</head>
+<body>
+<header class="flex">
+    <p>Header</p>
+</header>
+<main class="flex">
+    <section class="content flex">
+        <article class="content1 flex">
+            <p>Content - 1</p>
+        </article>
+        <article class="content2 flex">
+            <p>Content - 2</p>
+        </article>
+        <article class="content3 flex">
+            <p>Content - 3</p>
+        </article>
+    </section>
+    <section class="spam flex">
+        <article class="spam1 flex">
+            <p>spam -1</p>
+        </article>
+        <article class="spam2 flex">
+            <p>spam -2</p>
+        </article>
+    </section>
+</main>
+<footer class="flex">
+    <p>footer</p>
+</footer>
+</body>
+</html>

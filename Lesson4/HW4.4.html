@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 25vh;
+            color: #989494;
+        }
+
+        form {
+            width: 40vw;
+            height: 50vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .name {
+            width: 15vw;
+            height: 6vh;
+            font-weight: bold;
+            font-size: 15px;
+            padding-left: 0.3vw;
+            background-color: #fcfafa;
+            border: #b2aeae solid 1px;
+            border-radius: 5px;
+        }
+
+        .user {
+            width: 31vw;
+            height: 6vh;
+            font-weight: bold;
+            font-size: 15px;
+            padding-left: 0.3vw;
+            background-color: #fcfafa;
+            border: #b2aeae solid 1px;
+            border-radius: 5px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            margin: 0 4.5vw;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        .join {
+            width: 31vw;
+            height: 6vh;
+            background-color: #e6fa0c;
+            border: none;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 2vh;
+            color: #2f2e2e;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div class="userName">
+        <label>
+            <input type="text" name="firstName" class="name" placeholder="First name">
+        </label>
+        <label>
+            <input type="text" name="lastName" class="name" placeholder="Last name">
+        </label>
+    </div>
+    <label>
+        <input type="email" name="email" class="user" placeholder="Email address">
+    </label>
+    <label>
+        <input type="password" name="password" class="user" placeholder="Password (6 or more characters)">
+    </label>
+    <footer>
+        <p>
+            By clicking Join Now, you agree to Linkedln's
+            <a href="#">User Agreement Privacy Policy</a>
+            and <a href="#">Cookie Policy</a>
+        </p>
+        <label>
+            <input type="submit" class="join" value="Join now">
+        </label>
+
+    </footer>
+</form>
+
+</body>
+</html>

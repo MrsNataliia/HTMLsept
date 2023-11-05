@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20vh;
+            background-color: #98e198;
+        }
+
+        h1 {
+            color: #d30a0a;
+            font-size: 40px;
+            margin: 0 0 4vh 12vw;
+        }
+
+        form {
+            width: 70vw;
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+
+        .name {
+            width: 20vw;
+            height: 4vh;
+        }
+
+        .connection {
+            margin-right: 3vw;
+        }
+        .button{
+            width: 10vw;
+            height: 4vh;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Заповніть поля анкети</h1>
+<form>
+    <label>Ваше ім'я:
+        <input type="text" name="firstName" class="name">
+    </label>
+    <label>Ваше прізвище:
+        <input type="text" name="lastName" class="name">
+    </label>
+    <label>Ваша стать:
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Жіноча</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Чоловіча</label>
+    </label>
+    <label>Послугами якої сотової компанії Ви користуєтеся:
+        <br>
+        <label>MTS
+            <input type="checkbox" name="MTS" class="connection" value="MTS">
+        </label>
+        <label>Life:)
+            <input type="checkbox" name="life" class="connection" value="life">
+        </label>
+        <label>PeopleNet
+            <input type="checkbox" name="PeopleNet" class="connection" value="PeopleNet">
+        </label>
+        <label>Utel
+            <input type="checkbox" name="Utel" class="connection" value="Utel">
+        </label>
+
+    </label>
+    <div>
+        <label>
+            <input type="submit" class="button" value="Надіслати анкету">
+            <input type="submit" class="button" value="Очистити бланк">
+        </label>
+    </div>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+
+        main {
+            width: 35vw;
+            height: 75vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            border: rgba(213, 203, 203, 0.98) solid 2px;
+            margin-top: 5vh;
+
+        }
+
+        #instagram {
+            width: 20vw;
+            margin-top: 8vh;
+        }
+
+        form {
+            height: 24vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            font-weight: 800;
+        }
+
+        .user {
+            width: 25vw;
+            height: 5vh;
+            margin-top: 1vh;
+            border: rgba(213, 203, 203, 0.98) solid 2px;
+            background-color: #fafafa;
+            /*font-weight: bold;*/
+            padding: 10px;
+            color: #c0b6b6;
+            border-radius: 5px;
+            text-overflow: ellipsis;
+        }
+
+        .enter {
+            width: 26.5vw;
+            height: 5vh;
+            margin-top: 2vh;
+            border: none;
+            background-color: #85a4e5;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+
+        .facebook {
+            height: 7vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .facebook a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #3d58a2;
+        }
+
+        main p {
+            margin-top: 3vh;
+            font-weight: bold;
+            color: #655e5e;
+        }
+
+        .forget {
+            margin-bottom: 3vh;
+            text-decoration: none;
+            font-weight: bold;
+            color: #3d58a2;
+            font-size: 14px;
+        }
+
+        footer {
+            width: 35vw;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: rgba(213, 203, 203, 0.98) solid 2px;
+            margin-top: 2vh;
+            font-weight: bold;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #1a70c5;
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <img id="instagram" src="img.png" alt="logo">
+    <form>
+        <label>
+            <input type="text" name="username" class="user" placeholder="Номер телефону, ім'я користувача або email">
+        </label>
+        <label>
+            <input type="password" name="password" class="user" placeholder="Пароль">
+        </label>
+        <label>
+            <input type="submit" class="enter" value="Увійти">
+        </label>
+    </form>
+
+    <p>АБО</p>
+
+    <div class="facebook">
+        <img class="iconFacebook" width="36" height="36" src="https://img.icons8.com/color/48/facebook.png"
+             alt="facebook"/>
+        <a href="#">Увійти через Facebook</a>
+    </div>
+
+    <a class="forget" href="#">Забули пароль?</a>
+
+</main>
+
+<footer>
+    <p>Не має облікового запису?
+        <a href="#">Зареєструйся</a>
+    </p>
+</footer>
+</body>
+</html>
